@@ -12,6 +12,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 export default function SignupPage() {
+
+  const handleSignUp = async () => {
+    "use server";
+  };
+
   return (
     <div className="flex min-h-[90vh] items-center justify-center">
       <Card className="mx-auto max-w-sm">
