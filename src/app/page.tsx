@@ -1,18 +1,11 @@
-import Link from "next/link";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { NavigationMenuComponent } from "./_components/navigation";
 import { BenefitsComponent } from "./_components/benefits";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Component() {
   return (
@@ -29,18 +22,21 @@ export default function Component() {
                 integrated with Neon Database and T3 stack.
               </p>
               <div className="mt-6 flex justify-center gap-4 lg:justify-start">
-                <Button>Get Started</Button>
+                <Link href="/auth/signin" className="btn btn-primary">
+                  <Button>Get Started</Button>
+                </Link>
                 <Button variant="secondary">Learn More</Button>
               </div>
             </div>
-            <Image
-              src="/placeholder.jpg"
+            {/* <Image
+              src="/landing.png"
               width={600}
               height={400}
               alt="Hero"
               className="rounded-xl border"
               style={{ aspectRatio: "600/400", objectFit: "cover" }}
-            />
+            /> */}
+            <div className="relative h-[400px] w-full max-w-[750px] rounded-xl bg-black/80" />
           </div>
         </section>
         <section id="features" className="py-20">
@@ -165,7 +161,9 @@ export default function Component() {
                       Priority support
                     </li>
                   </ul>
-                  <Button>Get Started</Button>
+                  <Link href="/auth/signin" className="btn btn-primary">
+                    <Button>Get Started</Button>
+                  </Link>
                 </CardContent>
               </Card>
               <Card>
@@ -193,7 +191,9 @@ export default function Component() {
                       Priority support
                     </li>
                   </ul>
-                  <Button>Get Started</Button>
+                  <Link href="/auth/signin" className="btn btn-primary">
+                    <Button>Get Started</Button>
+                  </Link>
                 </CardContent>
               </Card>
               <Card>
@@ -221,7 +221,9 @@ export default function Component() {
                       Priority support
                     </li>
                   </ul>
-                  <Button>Get Started</Button>
+                  <Link href="/auth/signin" className="btn btn-primary">
+                    <Button>Get Started</Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>

@@ -46,7 +46,7 @@ export default function AnimatedBeamMultipleOutputDemo({
       )}
       ref={containerRef}
     >
-      <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
+      <div className="flex size-full max-w-lg flex-row items-stretch justify-between gap-10">
         <div className="flex flex-col justify-center gap-2">
           <Circle ref={div1Ref}>
             <Icons.googleDrive />

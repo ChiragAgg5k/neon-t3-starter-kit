@@ -68,7 +68,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
           <span className="text-lg">{icon}</span>
         </div>
         <div className="flex flex-col overflow-hidden">
-          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
+          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white">
             <span className="text-sm sm:text-lg">{name}</span>
             <span className="mx-1">·</span>
             <span className="text-xs text-gray-500">{time}</span>
@@ -90,7 +90,7 @@ export default function AnimatedListDemo({
   return (
     <div
       className={cn(
-        "relative flex h-[500px] w-full flex-col p-6 overflow-hidden rounded-lg border bg-background md:shadow-xl",
+        "relative flex h-[500px] w-full flex-col overflow-hidden rounded-lg border bg-background p-6 md:shadow-xl",
         className,
       )}
     >
