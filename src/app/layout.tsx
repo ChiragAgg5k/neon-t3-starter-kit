@@ -19,6 +19,10 @@ const fontBody = Manrope({
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <title>Neon T3 Starter Kit</title>
+      <meta name="description" content="Neon T3 Starter Kit" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/icon.png" />
       <body
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >
