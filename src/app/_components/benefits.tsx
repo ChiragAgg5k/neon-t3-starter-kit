@@ -1,12 +1,12 @@
 import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
 import { BellIcon, Share2Icon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
-import { Calendar } from "@/components/ui/calendar";
 import AnimatedBeamMultipleOutputDemo from "@/components/example/animated-beam-multiple-outputs";
+import AnimatedListDemo from "@/components/example/animated-list-demo";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import Marquee from "@/components/magicui/marquee";
-import AnimatedListDemo from "@/components/example/animated-list-demo";
+import { Calendar } from "@/components/ui/calendar";
+import { cn } from "@/lib/utils";
 
 const files = [
   {
@@ -106,12 +106,24 @@ const features = [
   },
 ];
 
-export function BenefitsComponent() {
+export default function Benefits() {
   return (
-    <BentoGrid>
-      {features.map((feature, idx) => (
-        <BentoCard key={idx} {...feature} />
-      ))}
-    </BentoGrid>
+    <section id="benefits" className="bg-muted py-20">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Benefits
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Discover the advantages of using our Next.js starter kit.
+          </p>
+        </div>
+        <BentoGrid>
+          {features.map((feature, idx) => (
+            <BentoCard key={idx} {...feature} />
+          ))}
+        </BentoGrid>
+      </div>
+    </section>
   );
 }

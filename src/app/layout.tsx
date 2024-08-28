@@ -1,7 +1,12 @@
-import { Manrope } from "next/font/google";
+import { type ReactNode } from "react";
+
 import { cn } from "@/lib/utils";
-import "../styles/globals.css";
-import React from "react";
+import { Manrope } from "next/font/google";
+
+// Styles
+import "@/styles/globals.css";
+
+// Components
 import { Navbar } from "./_components/navbar";
 
 const fontHeading = Manrope({
@@ -16,7 +21,7 @@ const fontBody = Manrope({
   variable: "--font-body",
 });
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <title>Neon T3 Starter Kit</title>
